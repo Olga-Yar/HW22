@@ -1,0 +1,9 @@
+.idea
+db.sqlite3
+__pycache__/
+config/__pycache__/
+.DS_Store
+static/css/
+static/js/
+static
+catalog/migrations/
