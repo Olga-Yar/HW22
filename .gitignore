@@ -6,4 +6,3 @@ config/__pycache__/
 static/css/
 static/js/
 static
-catalog/migrations/
