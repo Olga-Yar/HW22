@@ -1,4 +1,6 @@
 from django.db import models
+from django.urls import reverse
+
 
 # Create your models here.
 
@@ -6,7 +8,7 @@ from django.db import models
 class Product(models.Model):
     name = models.CharField(max_length=300, verbose_name='наименование')
     about = models.TextField(blank=True, verbose_name='описание')
-    image = models.ImageField(upload_to='products/', verbose_name='превью')
+    image = models.ImageField(upload_to='Product/', verbose_name='превью')
     #category = models.CharField(max_length=300, verbose_name='категория')
     price_lot = models.IntegerField(verbose_name='цена за покупку')
     date_create = models.DateTimeField(auto_now_add=True, verbose_name='дата создания')
