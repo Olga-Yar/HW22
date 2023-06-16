@@ -1,9 +1,10 @@
 from django import template
 from catalog.models import *
+from config import settings
 
 register = template.Library()
 
 
 @register.simple_tag()
-def mediapath():
-    return r'/Users/olgaaros/Desktop/PY_SkyPro/C6_Django/19.1_19.2/HW20/media'
+def mediapath(image_path):
+    return image_path
