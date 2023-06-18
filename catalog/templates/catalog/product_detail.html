@@ -12,7 +12,10 @@
         <hr>
 
         <h2>{{ product.price_lot }} руб.</h2>
-        <img src="{% mediapath product.image.url %}" />
+        {% if object.image %}
+        <p><image class="img-article-left thumb" src="{{object.image.url}}"></image></p>
+        {% endif %}
+
 
     </article>
 
