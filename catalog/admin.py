@@ -18,7 +18,9 @@ class CategoryAdmin(admin.ModelAdmin):
     # list_filter = ('category',)
     search_fields = ('name', 'about',)
 
+
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'title', 'date_create', 'is_public')
+    list_display = ('pk', 'title', 'content', 'date_create', 'is_public')
     search_fields = ('title', 'date_create', 'is_public')
+    prepopulated_fields = {'slug': ('title',)}
