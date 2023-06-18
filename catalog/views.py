@@ -1,4 +1,6 @@
 from django.shortcuts import render, get_object_or_404
+from django.urls import reverse_lazy
+from django.views import generic
 
 from catalog.models import Category, Product
 
@@ -7,9 +9,18 @@ from catalog.models import Category, Product
 def index(request):
     category_list = Category.objects.all()
     context = {
-        'category_list': category_list
+        'category_list': category_list,
+        'title': 'Главная'
     }
     return render(request, 'catalog/index.html', context)
+
+
+class CategoryListView(generic.ListView):
+    model = Category
+
+
+class ProductListView(generic.ListView):
+    model = Product
 
 
 def contact(request):
@@ -22,9 +33,23 @@ def contact(request):
     return render(request, 'catalog/contact.html')
 
 
-def post_card(request, pk):
-    product = get_object_or_404(Product, pk=pk)
-    context = {
-        'product': product
-    }
-    return render(request, 'catalog/product.html', context)
+class ProductDitailView(generic.DetailView):
+    model = Product
+
+
+class ProductCreateView(generic.CreateView):
+    model = Product
+    fields = ('name', 'about', 'price_lot', 'cat')
+    success_url = reverse_lazy('product_list')
+
+
+class ProductUpdateView(generic.UpdateView):
+    model = Product
+    fields = ('name', 'about', 'price_lot', 'cat')
+    success_url = reverse_lazy('product_list')
+
+
+class ProductDeleteView(generic.DeleteView):
+    model = Product
+    success_url = reverse_lazy('product_list')
+
