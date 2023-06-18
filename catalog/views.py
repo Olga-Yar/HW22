@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
 from django.views import generic
 
-from catalog.models import Category, Product
+from catalog.models import Category, Product, Blog
 
 
 # Create your views here.
@@ -52,4 +52,8 @@ class ProductUpdateView(generic.UpdateView):
 class ProductDeleteView(generic.DeleteView):
     model = Product
     success_url = reverse_lazy('product_list')
+
+
+class BlogListView(generic.ListView):
+    model = Blog
 
