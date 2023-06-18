@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 from django.urls import path
 
 from catalog.views import index, contact, ProductDitailView, CategoryListView, \
-    ProductListView, ProductCreateView, ProductUpdateView, ProductDeleteView
+    ProductListView, ProductCreateView, ProductUpdateView, ProductDeleteView, BlogListView
 
 urlpatterns = [
     path('', index, name='home'),
@@ -14,4 +14,5 @@ urlpatterns = [
     path('product/create/', ProductCreateView.as_view(), name='product_create'),
     path('product/update/<int:pk>/', ProductUpdateView.as_view(), name='product_update'),
     path('product/delete/<int:pk>/', ProductDeleteView.as_view(), name='product_delete'),
+    path('blog/', BlogListView.as_view(), name='blog_list'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_URL)
