@@ -8,6 +8,7 @@
         <h2 class="display-5 link-body-emphasis mb-1">{{ blog.title }}</h2>
 
         <p>{{ blog.content|linebreaks }}</p>
+        <p>Просмотры: {{ blog.num_views }}</p>
         <hr>
 
         {% if blog.image %}
