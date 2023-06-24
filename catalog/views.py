@@ -57,3 +57,24 @@ class ProductDeleteView(generic.DeleteView):
 class BlogListView(generic.ListView):
     model = Blog
 
+
+class BlogDitailView(generic.DetailView):
+    model = Blog
+    slug_url_kwarg = 'post_slug'
+
+
+class BlogCreateView(generic.CreateView):
+    model = Blog
+    fields = ('title', 'content',)
+    success_url = reverse_lazy('blog_list')
+
+
+class BlogUpdateView(generic.UpdateView):
+    model = Blog
+    fields = ('title', 'content',)
+    success_url = reverse_lazy('blog_list')
+
+
+class BlogDeleteView(generic.DeleteView):
+    model = Blog
+    success_url = reverse_lazy('blog_list')
