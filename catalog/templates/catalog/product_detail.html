@@ -8,12 +8,12 @@
         <h2 class="display-5 link-body-emphasis mb-1">{{ product.name }}</h2>
         <p class="blog-post-meta"> <a href="#">{{ category.name }}</a></p>
 
-        <p>{{ product.about }}</p>
+        <p>{{ product.about|linebreaks }}</p>
         <hr>
 
         <h2>{{ product.price_lot }} руб.</h2>
-        {% if object.image %}
-        <p><image class="img-article-left thumb" src="{{object.image.url}}"></image></p>
+        {% if product.image %}
+        <img src= "{{ product.image.url }}">
         {% endif %}
 
 
