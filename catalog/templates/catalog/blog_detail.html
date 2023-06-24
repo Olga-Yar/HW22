@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'catalog/base.html' %}
+{% load static %}
+{% load catalog_tags %}
+
+{% block content %}
+
+    <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">{{ blog.title }}</h2>
+
+        <p>{{ blog.content|linebreaks }}</p>
+        <hr>
+
+        {% if blog.image %}
+        <img src= "{{ blog.image.url }}">
+        {% endif %}
+
+
+    </article>
+
+{% endblock %}
