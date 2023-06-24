@@ -18,8 +18,8 @@ urlpatterns = [
     path('product/delete/<int:pk>/', ProductDeleteView.as_view(), name='product_delete'),
 
     path('blog/', BlogListView.as_view(), name='blog_list'),
-    path('blog/<slug:post_slug>/', BlogDitailView.as_view(), name='blog_item'),
     path('blog/create/', BlogCreateView.as_view(), name='blog_create'),
     path('blog/<slug:post_slug>/', BlogUpdateView.as_view(), name='blog_update'),
     path('blog/<slug:post_slug>/', BlogDeleteView.as_view(), name='blog_delete'),
+    path('blog/<slug:post_slug>/', BlogDitailView.as_view(), name='blog_item'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
