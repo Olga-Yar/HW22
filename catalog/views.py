@@ -62,6 +62,12 @@ class BlogDitailView(generic.DetailView):
     model = Blog
     slug_url_kwarg = 'post_slug'
 
+    def get_object(self, queryset=None):
+        blog = super().get_object(queryset=queryset)
+        blog.num_views += 1
+        blog.save()
+        return blog
+
 
 class BlogCreateView(generic.CreateView):
     model = Blog
