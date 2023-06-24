@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'catalog/base.html' %}
+{% load static %}
+{% load catalog_tags %}
+
+{% block content %}
+
+    <article class="blog-post">
+        <form method="post">
+          {% csrf_token %}
+          Уверены, что хотите удалить " {{object.name}} "?<br>
+
+          <input type="submit" class="btn btn-sm btn-outline-danger" value="Уверен">
+        </form>
+
+      <div class="card-footer">
+        <a href="{% url 'blog_list' %}" class="btn btn-sm btn-outline-secondary"> Назад </a>
+      </div>
+
+    </article>
+
+{% endblock %}
