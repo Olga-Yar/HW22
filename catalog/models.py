@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from slugify import slugify
 
 
 # Create your models here.
@@ -45,6 +46,10 @@ class Blog(models.Model):
 
     def __str__(self):
         return f'{self.title} - {self.is_public}'
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Blog, self).save(*args, **kwargs)
 
     class Meta:
         verbose_name = 'Публикация'
