@@ -51,6 +51,9 @@ class Blog(models.Model):
         self.slug = slugify(self.title)
         super(Blog, self).save(*args, **kwargs)
 
+    def get_absolute_url(self):
+        return reverse('blog_item', kwargs={'slug': self.slug})
+
     class Meta:
         verbose_name = 'Публикация'
         verbose_name_plural = 'Публикации'
