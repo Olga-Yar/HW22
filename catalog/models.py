@@ -57,3 +57,18 @@ class Blog(models.Model):
     class Meta:
         verbose_name = 'Публикация'
         verbose_name_plural = 'Публикации'
+
+
+class Version(models.Model):
+    product = models.ForeignKey('Product', on_delete=models.PROTECT, null=True)
+    version_number = models.FloatField(verbose_name='номер версии')
+    version_name = models.CharField(max_length=150, verbose_name='название версии')
+    is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f'{self.version_name}'
+
+    class Meta:
+        verbose_name = 'Версия'
+        verbose_name_plural = 'Версии'
+
