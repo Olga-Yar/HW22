@@ -4,17 +4,25 @@
 
 {% block content %}
 
-    <article class="blog-post">
-        <form method="post">
-          {% csrf_token %}
-          {{ form.as_p }}
-          <input type="submit" class="btn btn-success" value="{% if object %}Сохранить{% else %}Создать{% endif %}">
-        </form>
-
-      <div class="card-footer">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">
+                    Добавление продукта
+                </h4>
+            </div>
+             <div class="card-body">
+                 <form method="post" enctype="multipart/form-data">
+                 {% csrf_token %}
+                     {{ form.as_p }}
+                 <input type="submit" class="btn btn-success" value="{% if object %}Сохранить{% else %}Создать{% endif %}">
+                 </form>
+             </div>
+        </div>
+        <div class="card-footer">
         <a href="{% url 'product_list' %}" class="btn btn-sm btn-outline-secondary"> Назад </a>
       </div>
+    </div>
 
-    </article>
 
 {% endblock %}
