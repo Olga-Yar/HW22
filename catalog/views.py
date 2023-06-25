@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.views import generic
 
+from catalog.forms import ProductForm, BlogForm
 from catalog.models import Category, Product, Blog
 
 
@@ -41,13 +42,13 @@ class ProductDetailView(generic.DetailView):
 
 class ProductCreateView(generic.CreateView):
     model = Product
-    fields = ('name', 'about', 'price_lot', 'cat')
+    form_class = ProductForm
     success_url = reverse_lazy('product_list')
 
 
 class ProductUpdateView(generic.UpdateView):
     model = Product
-    fields = ('name', 'about', 'price_lot', 'cat')
+    form_class = ProductForm
     success_url = reverse_lazy('product_list')
 
 
@@ -73,14 +74,14 @@ class BlogDetailView(generic.DetailView):
 
 class BlogCreateView(generic.CreateView):
     model = Blog
-    fields = ('title', 'content',)
+    form_class = BlogForm
     success_url = reverse_lazy('blog_list')
     slug_url_kwarg = 'slug'
 
 
 class BlogUpdateView(generic.UpdateView):
     model = Blog
-    fields = ('title', 'content',)
+    form_class = BlogForm
     success_url = reverse_lazy('blog_item')
     slug_url_kwarg = 'slug'
 
