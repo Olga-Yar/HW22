@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from catalog.models import Product, Category, Blog
+from catalog.models import Product, Category, Blog, Version
 
 
 # Register your models here.
@@ -24,3 +24,9 @@ class BlogAdmin(admin.ModelAdmin):
     list_display = ('pk', 'title', 'content', 'date_create', 'is_public', 'image')
     search_fields = ('title', 'date_create', 'is_public')
     prepopulated_fields = {'slug': ('title',)}
+
+
+@admin.register(Version)
+class VersionAdmin(admin.ModelAdmin):
+    list_display = ('product', 'version_number', 'version_name', 'is_active')
+    search_fields = ('product', 'version_number', 'version_name', 'is_active')
