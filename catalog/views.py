@@ -3,7 +3,7 @@ from django.urls import reverse_lazy, reverse
 from django.views import generic
 
 from catalog.forms import ProductForm, BlogForm
-from catalog.models import Category, Product, Blog
+from catalog.models import Category, Product, Blog, Version
 
 
 # Create your views here.
@@ -24,6 +24,7 @@ class CategoryListView(generic.ListView):
 
 class ProductListView(generic.ListView):
     model = Product
+    version = Version
 
 
 def contact(request):
