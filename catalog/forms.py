@@ -19,14 +19,16 @@ class ProductForm(forms.ModelForm):
         return cleaned_data
 
     def clean_about(self):
-        cleaned_about = self.cleaned_data['about']
+        cleaned_data = self.cleaned_data['about']
         stop_list = ['казино', 'криптовалюта', 'крипта', 'биржа', 'дешево', 'бесплатно', 'обман', 'полиция', 'радар']
 
-        for word in cleaned_about:
+        about = cleaned_data.split()
+
+        for word in about:
             if word in stop_list:
                 raise forms.ValidationError('Запрещенный продукт.')
 
-        return cleaned_about
+        return cleaned_data
 
 
 class BlogForm(forms.ModelForm):
