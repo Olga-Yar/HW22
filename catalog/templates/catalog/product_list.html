@@ -10,8 +10,11 @@
         <div class="col">
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
+              <title>{{object.name}}</title>
               <rect width="100%" height="100%" fill="#4682B4"/>
+              {% if version.is_active %}
+                  <span class="active">Активная версия</span>
+              {% endif %}
               <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" fill="#eceeef" dy=".3em">{{object.name}}</text>
             </svg>
             <div class="card-body">
