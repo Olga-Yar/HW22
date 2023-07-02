@@ -1,6 +1,6 @@
 from django import forms
 
-from catalog.models import Product, Blog
+from catalog.models import Product, Blog, Version
 
 
 class ProductForm(forms.ModelForm):
@@ -29,6 +29,14 @@ class ProductForm(forms.ModelForm):
                 raise forms.ValidationError('Запрещенный продукт.')
 
         return cleaned_data
+
+
+class VersionForm(forms.ModelForm):
+
+    class Meta:
+        model = Version
+        fields = '__all__'
+
 
 
 class BlogForm(forms.ModelForm):
