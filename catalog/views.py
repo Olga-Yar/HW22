@@ -127,6 +127,9 @@ class BlogUpdateView(generic.UpdateView):
     success_url = reverse_lazy('blog_item')
     slug_url_kwarg = 'slug'
 
+    def get_success_url(self):
+        return reverse('blog_item', kwargs={'slug': self.object.slug})
+
 
 class BlogDeleteView(generic.DeleteView):
     model = Blog
