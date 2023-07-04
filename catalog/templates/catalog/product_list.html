@@ -7,7 +7,7 @@
       <a href="{% url 'product_create' %}" class="btn btn-sm btn-outline-secondary">Создать продукт</a>
       {% for object in product_list %}
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
+        <div class="col m-md-3">
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
               <title>{{object.name}}</title>
