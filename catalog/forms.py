@@ -3,7 +3,14 @@ from django import forms
 from catalog.models import Product, Blog, Version
 
 
-class ProductForm(forms.ModelForm):
+class StyleForMixin:
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = 'form-control'
+
+
+class ProductForm(StyleForMixin, forms.ModelForm):
 
     class Meta:
         model = Product
@@ -31,15 +38,14 @@ class ProductForm(forms.ModelForm):
         return cleaned_data
 
 
-class VersionForm(forms.ModelForm):
+class VersionForm(StyleForMixin, forms.ModelForm):
 
     class Meta:
         model = Version
-        fields = '__all__'
+        fields = ('version_number', 'version_name', 'is_active')
 
 
-
-class BlogForm(forms.ModelForm):
+class BlogForm(StyleForMixin, forms.ModelForm):
 
     class Meta:
         model = Blog
