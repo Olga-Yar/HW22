@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Catalog2',
+        'NAME': 'catalog2',
         'USER': 'postgres',
         'PASSWORD': 123098
     }

@@ -1,1 +1,963 @@
-[{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2023-06-23T18:47:16.543Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Что такое фридайвинг и каким он бывает? - True", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2023-06-23T18:47:59.089Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Иногда фридайверы ныряют с тросом. Зачем он нужен? - True", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2023-06-23T18:48:47.720Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Фридайвинг появился тысячи лет назад - True", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2023-06-23T18:50:04.881Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "Карбоновые ласты Hydra CarboTwill с калошами Leaderfins Forza: Великолепные карбоновые лопасти от компании Hydra. 100% карбон. Очень легкие и быстрые. Калоши Leaderfins Forza - новейшие качественные к", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2023-06-23T18:50:18.870Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "Гидрокостюм женский Scorpena Apnea F2 - 7 мм: Это костюм раздельного типа, состоящий из куртки со встроенным шлемом и высоких штанов. Изготовлен из высококлассного неопрена с ультраэластичным внешним ", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2023-06-23T18:50:30.773Z", "user": 1, "content_type": 9, "object_id": "3", "object_repr": "Моноласта для фридайвинга Гипер Дайв Карбон: Моноласта с карбоновой лопастью, имеющей стеклотекстолитовое основание, для фридайвинга.Моноласт изготавливается с учетом Всех необходимых индивидуальных п", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2023-06-23T18:50:54.857Z", "user": 1, "content_type": 9, "object_id": "4", "object_repr": "Силиконовая моноласта Molchanovs CORE, Black: Получайте удовольствие от тренировок и увлекательного фридайвинга с силиконовой моноластой CORE. Идеально подходит для фридайверов всех уровней, которые х", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2023-06-23T18:51:10.867Z", "user": 1, "content_type": 9, "object_id": "5", "object_repr": "Маска Omer Zero 3: У маски Zero 3 объем подмасочного пространства настолько мал, что необходимость поддувать маску для компенсации обжима появляется только на глубине 18 м. (для Alien это 8-9 м.) Это ", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2023-06-23T18:51:28.136Z", "user": 1, "content_type": 9, "object_id": "6", "object_repr": "Зажим для носа Mares Apnea: Удобный и компактный зажим для носа с анатомической поверхностью, прилегающей к крыльям носа. Не скользит и не царапает. Зажим регулируется в зависимости от формы носа. Отв", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2023-06-24T14:57:48.165Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Фридайвинг появился тысячи лет назад - False", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u044f\"]}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2023-06-24T16:29:51.167Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Что такое фридайвинг и каким он бывает? - True", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2023-06-24T16:31:06.876Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Иногда фридайверы ныряют с тросом. Зачем он нужен? - True", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2023-06-24T16:32:55.908Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Фридайвинг появился тысячи лет назад - False", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2023-06-24T16:33:27.795Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Иногда фридайверы ныряют с тросом. Зачем он нужен? - True", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2023-06-25T15:56:24.322Z", "user": 1, "content_type": 10, "object_id": "1", "object_repr": "Карбон", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2023-06-25T15:56:51.625Z", "user": 1, "content_type": 10, "object_id": "2", "object_repr": "Карбон", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2023-06-25T15:57:30.703Z", "user": 1, "content_type": 10, "object_id": "3", "object_repr": "Силикон", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2023-06-25T15:58:33.407Z", "user": 1, "content_type": 10, "object_id": "4", "object_repr": "Полный костюм", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2023-06-25T15:59:11.024Z", "user": 1, "content_type": 10, "object_id": "5", "object_repr": "Маска для фридайвинга", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2023-06-25T16:00:25.949Z", "user": 1, "content_type": 10, "object_id": "6", "object_repr": "Пластик", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2023-06-25T16:01:16.999Z", "user": 1, "content_type": 10, "object_id": "2", "object_repr": "Карбон", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add user", "content_type": 4, "codename": "add_user"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change user", "content_type": 4, "codename": "change_user"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete user", "content_type": 4, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view user", "content_type": 4, "codename": "view_user"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add content type", "content_type": 5, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change content type", "content_type": 5, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete content type", "content_type": 5, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view content type", "content_type": 5, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add session", "content_type": 6, "codename": "add_session"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change session", "content_type": 6, "codename": "change_session"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete session", "content_type": 6, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view session", "content_type": 6, "codename": "view_session"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add Публикация", "content_type": 7, "codename": "add_blog"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change Публикация", "content_type": 7, "codename": "change_blog"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete Публикация", "content_type": 7, "codename": "delete_blog"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view Публикация", "content_type": 7, "codename": "view_blog"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add Категория", "content_type": 8, "codename": "add_category"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change Категория", "content_type": 8, "codename": "change_category"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete Категория", "content_type": 8, "codename": "delete_category"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view Категория", "content_type": 8, "codename": "view_category"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add Продукция", "content_type": 9, "codename": "add_product"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change Продукция", "content_type": 9, "codename": "change_product"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete Продукция", "content_type": 9, "codename": "delete_product"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view Продукция", "content_type": 9, "codename": "view_product"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add Версия", "content_type": 10, "codename": "add_version"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change Версия", "content_type": 10, "codename": "change_version"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete Версия", "content_type": 10, "codename": "delete_version"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can view Версия", "content_type": 10, "codename": "view_version"}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$600000$xiBLUBkrVk6y3qRIFn0U2I$RTBvO3vgpfJ8azBTeIzeZhjMXhTJetcyQR/8HcbvqSQ=", "last_login": "2023-06-23T18:44:46.983Z", "is_superuser": true, "username": "develop", "first_name": "", "last_name": "", "email": "", "is_staff": true, "is_active": true, "date_joined": "2023-06-23T18:44:21.458Z", "groups": [], "user_permissions": []}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "catalog", "model": "blog"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "catalog", "model": "category"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "catalog", "model": "product"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "catalog", "model": "version"}}, {"model": "sessions.session", "pk": "e10cblgc5edkinm0c4nn7faxrn36eqis", "fields": {"session_data": ".eJxVjMsOwiAUBf-FtSE8CoJL9_0Gch9UqgaS0q6M_65NutDtmZnzEgm2taSt5yXNLC5Ci9PvhkCPXHfAd6i3JqnVdZlR7oo8aJdj4_y8Hu7fQYFevnUAM5Bnj8yZ0KnAHlTQ2Ud7DuhQm0gwOWd8JG8HRDvYoHVUkCFOFMX7A_GzOAc:1qClm2:ssrz9fzGapXkcDcqiB_QwtCSreNbXzZyD7cqvt4VJGw", "expire_date": "2023-07-07T18:44:46.989Z"}}, {"model": "catalog.product", "pk": 1, "fields": {"name": "Карбоновые ласты Hydra CarboTwill с калошами Leaderfins Forza", "about": "Великолепные карбоновые лопасти от компании Hydra. 100% карбон. Очень легкие и быстрые. Калоши Leaderfins Forza - новейшие качественные калоши для ласт от компании Лидерфинс. \r\nОсновые особенности калош для ласт Лидерфинс Форза.", "image": "Product/FinsHydra.png", "price_lot": 21481, "date_create": "2023-06-23T18:39:38.771Z", "date_last_change": "2023-07-02T15:52:03.535Z", "cat": 2}}, {"model": "catalog.product", "pk": 2, "fields": {"name": "Гидрокостюм женский Scorpena Apnea F2 - 7 мм", "about": "Это костюм раздельного типа, состоящий из куртки со встроенным шлемом и высоких штанов. Изготовлен из высококлассного неопрена с ультраэластичным внешним покрытием и открытой порой изнутри, что гарантирует высокую степень теплозащиты и отличное прилегание.", "image": "Product/Wetsuit7.png", "price_lot": 24800, "date_create": "2023-06-23T18:39:38.771Z", "date_last_change": "2023-06-23T18:50:18.867Z", "cat": 4}}, {"model": "catalog.product", "pk": 3, "fields": {"name": "Моноласта для фридайвинга Гипер Дайв Карбон", "about": "Моноласта с карбоновой лопастью, имеющей стеклотекстолитовое основание, для фридайвинга.Моноласт изготавливается с учетом Всех необходимых индивидуальных параметров.Имеет низкую положительную плавучесть.Галоши выполнены с учетом индивидуальных особенностей Ваших ног.", "image": "Product/MonofinCarbon.png", "price_lot": 37100, "date_create": "2023-06-23T18:39:38.771Z", "date_last_change": "2023-06-23T18:50:30.769Z", "cat": 3}}, {"model": "catalog.product", "pk": 4, "fields": {"name": "Силиконовая моноласта Molchanovs CORE, Black", "about": "Получайте удовольствие от тренировок и увлекательного фридайвинга с силиконовой моноластой CORE. Идеально подходит для фридайверов всех уровней, которые хотят тренировать свою технику, прежде чем приобретать снаряжение следующего уровня.", "image": "Product/MonofinMolchanovs.png", "price_lot": 14590, "date_create": "2023-06-23T18:39:38.771Z", "date_last_change": "2023-06-23T18:50:54.854Z", "cat": 3}}, {"model": "catalog.product", "pk": 5, "fields": {"name": "Маска Omer Zero 3", "about": "У маски Zero 3 объем подмасочного пространства настолько мал, что необходимость поддувать маску для компенсации обжима появляется только на глубине 18 м. (для Alien это 8-9 м.) Это делает процесс погружения значительно более комфортным. Каждая деталь этой маски представляет собой идеальное сочетание дизайна и функциональности.", "image": "Product/MaskZero.png", "price_lot": 4790, "date_create": "2023-06-23T18:39:38.771Z", "date_last_change": "2023-06-23T18:51:10.865Z", "cat": 1}}, {"model": "catalog.product", "pk": 6, "fields": {"name": "Зажим для носа Mares Apnea", "about": "Удобный и компактный зажим для носа с анатомической поверхностью, прилегающей к крыльям носа. Не скользит и не царапает. Зажим регулируется в зависимости от формы носа. Отверстие для шнурка безопасности.", "image": "Product/NoiseCleap.png", "price_lot": 1990, "date_create": "2023-06-23T18:39:38.771Z", "date_last_change": "2023-06-23T18:51:28.133Z", "cat": 1}}, {"model": "catalog.category", "pk": 1, "fields": {"name": "Аксессуары", "about": ""}}, {"model": "catalog.category", "pk": 2, "fields": {"name": "Ласты", "about": "Фридайвинг является экстремальным видом подводного спорта. Для достижения больших глубин на задержке дыхания ныряльщик должен развивать достаточно высокую скорость. Помогают ему в этом специальные ласты. Их особая конструкция позволяет значительно увеличить динамические показатели и снизить сопротивление воды. Благодаря такой экипировке можно достигать лучших результатов, затрачивая меньше усилий.Прежде чем купить ласты для фридайвинга, нужно изучить их основные характеристики:жесткость. Она должна быть довольно большой, чтобы выполнялся цепной ударный цикл. Это позволяет ныряльщику добиваться ускорения не только при прямом движении ног, но и во время отдачи. Жесткие модели подойдут опытным, хорошо тренированным спортсменам. Новичкам же лучше выбрать лопасти помягче;конструкция. Для свободного ныряния обычно используют модели с удлиненными лопастями и закрытой калошей. В некоторых случаях дайверы используют монолопасти, которые напоминают хвост русалки;материал. Обычно калоша изготавливается из жесткого силикона или резины, а лопасти – из стеклотекстолита, пластика или карбона."}}, {"model": "catalog.category", "pk": 3, "fields": {"name": "Моноласты", "about": "В конструкции моноласт есть некоторые особенности. Чем теснее галоши, тем более эффективны усилия пловца, обеспечивающие его движение вперед в воде. Однако от этого моноласта становится менее удобной. Эффективность – это соотношение усилия и результата. В некоторых галошах есть дополнительный резиновый слой для большего удобства стопы.Моноласты бывают разного размера и жесткости, с разной площадью лопасти, из разного материала и т.д. Все эти факторы могут так или иначе повлиять на эффективность плавания. Но, как и в любом виде спорта и с любым снаряжением, идеальную по всем параметрам модель еще не изобрели. И, разумеется, без хорошей техники плавания все эти особенности и характеристики не будут иметь значения."}}, {"model": "catalog.category", "pk": 4, "fields": {"name": "Гидрокостюмы", "about": "Есть несколько видов гидрокостюмов для фридайвинга, первый куртки с капюшоном и штанов с высокой талией, второй моно с молнией на спине. Конечно есть и другое многочисленное количество вариаций гидрокостюмов, но эти два основных. Материал, использующийся для таких гидрокостюмов, — неопрен, не имеющий текстильного покрытия . Он образует «вторую кожу», плотно прилипая к поверхности тела. Вода в нём практически не циркулирует, что благоприятно сказывается на теплоизоляции. Но из-за эффекта прилипания костюмы с «открытой порой» нужно одевать только в воде или при помощи мыльного раствора. Или с текстильным покрытием.Выбор гидрокостюма, который вам подходит, очень ответственный. Важно подобрать его чётко по своему размеру, так как если он не будет полностью облегать ваше тело, то останется пустое место, где циркулировала бы вода — а это недопустимо, так как повышает теплоотдачу. Костюм не должен провисать в промежности или подмышками, он обязан плотно прилегать на запястьях, шее и талии. Но новый гидрокостюм фридайвера не должен жать, ведь этим он будет причинять постоянный дискомфорт и превратит плавание из удовольствия в муку. И ещё — выбирайте максимально эластичный материал, от этого зависит эффективность костюма."}}, {"model": "catalog.blog", "pk": 1, "fields": {"title": "Что такое фридайвинг и каким он бывает?", "slug": "chto-takoe-fridaiving-i-kakim-on-byvaet", "content": "Фридайвинг — это различные виды погружений с задержкой дыхания. \r\nВ спортивном фридайвинге есть три дисциплины: задержка дыхания в бассейне на время, ныряние в длину на дистанцию и ныряние в глубину. Если брать фридайвинг в общем смысле слова, то можно и соревноваться, и заниматься фотографией или исследованием подводного ландшафта, и общаться с животными.\r\n\r\nОфициальных дисциплин во фридайвинге восемь. Из них четыре в бассейне:\r\n\r\n- задержка дыхания на время;\r\n- ныряние в длину без ласт брассом;\r\n- ныряние в длину в биластах (в двух ластах) ногами кролем;\r\n- ныряние в длину в моноласте (в одной большой ласте) — более сложный инструмент, который требует владения техникой плавания дельфином.\r\n\r\nГлубинных дисциплин тоже четыре:\r\n\r\n- ныряние в глубину без ласт брассом — физически сложный способ, потому что нужно погрузиться без вспомогательной верёвки и ласт;\r\n- ныряние в глубину в биластах;\r\n- ныряние в глубину в моноласте;\r\n- ныряние по тросу на руках — скорее дань традициям. Так, например, японские, полинезийские и греческие ныряльщики древних времён добывали ракушки и губки.\r\n\r\nВ дисциплине с моноластом результаты, как правило, больше. Например, в нырянии в длину в двух ластах абсолютный рекорд мира — 265 метров, а в моноласте — 318. В глубину же рекорд мира в биластах — 113 метров, в моноласте — 130. Разница есть!\r\n\r\nТакже один из прикладных видов фридайвинга — подводная охота. Это возможность охотиться без дыхания, зайти под воду с пневматическим ружьём или ружьём-арбалетом с резиновыми тягами. Такой вид охоты с точки зрения экологичности самый честный.", "image": "Blog/C9647C9F-1147-4033-9348-5C507E6241E1.jpeg", "date_create": "2023-06-23T18:47:16.533Z", "is_public": true, "num_views": 21}}, {"model": "catalog.blog", "pk": 2, "fields": {"title": "Иногда фридайверы ныряют с тросом. Зачем он нужен?", "slug": "inogda-fridaivery-nyriaiut-s-trosom-zachem-on-nuzhen", "content": "Трос — это инструмент, который помогает сделать первые шаги, ровно как и учебная дорожка в бассейне. Около него удобно ориентироваться, за него можно взяться, повисеть, научиться компенсировать давление и продувать уши. А потом уже можно нырять вдоль рифа, в открытом море без всяких канатов.\r\n\r\nНа соревнованиях по фридайвингу трос используют как направляющую, которая помогает плыть по одной прямой, и для обеспечения безопасности. К нему пристёгивают специальным лайнером, чтобы спортсмены не потерялись в тёмной воде. Ещё это помогает в случае подводных течений.\r\n\r\nКроме того, нырять нужно всегда с партнёром. Делать это одному небезопасно, так как может случиться потеря сознания. Если неправильно плыть с техникой, расходующей большое количество кислорода, то потеря сознания чревата утоплением. Поэтому нужен партнёр — квалифицированный инструктор.", "image": "Blog/CC19DFAE-2CC7-44DE-94FE-5AB0378A774B.jpeg", "date_create": "2023-06-23T18:47:59.080Z", "is_public": true, "num_views": 7}}, {"model": "catalog.blog", "pk": 3, "fields": {"title": "Фридайвинг появился тысячи лет назад", "slug": "fridaiving-poiavilsia-tysiachi-let-nazad", "content": "Само ныряние с задержкой дыхания появилось тысячи лет назад. Люди рыбачили, охотились, доставали жемчуг, ракушки и губки со дна. В России же всегда были реки и выходы к морям, фридайвинг существовал ещё в царское время и применялся как военный навык. Создавались подразделения подводных боевых пловцов, которые могли проводить спецоперации, запруды и диверсии с кораблями. К тому же у нас в стране всегда было много подводных охотников.\r\n\r\nСовременное развитие спортивного фридайвинга наступило в России чуть позже, чем в мире. В Европе такие состязания появились в 60-70-е годы XX века. А когда на экраны вышел фильм Люка Бессона «Голубая бездна» (1988 год) об истории Жака Майоля и Энцо Майорки, интерес к фридайвингу вырос и образовалась специальная федерация, которая начала развивать спорт в первую очередь во Франции.\r\n\r\nВ чистом виде фридайвинг как спорт появился в конце 90-х — начале 2000-х. Тогда начали образовываться клубы энтузиастов, которые выезжали на соревнования. Например, действующий врач нашей сборной Евгений Бутов уже тогда ездил в Европу на обучающие семинары к Умберто Пелиццари — итальянскому чемпиону тех времён. А в 2005 году была создана Федерация Фридайвинга — некоммерческое объединение, которое организовывает чемпионаты и в настоящее время.", "image": "Blog/B0534EE3-77B0-4CF5-9222-DB891E7B2052.jpeg", "date_create": "2023-06-23T18:48:47.707Z", "is_public": false, "num_views": 0}}, {"model": "catalog.blog", "pk": 4, "fields": {"title": "Навыки, которые необходимы для удачного погружения", "slug": "navyki-kotorye-neobkhodimy-dlia-udachnogo-pogruzheniia", "content": "Среди самых главных — расслабление, в том числе эмоциональное, и компенсация давления ушей. Также важны умение двигаться под водой брассом или в ластах, техника ныряния и координация.\r\n\r\nЕщё нельзя забывать о гибкости, подвижности грудной клетки. Развитие эластичности наших дыхательных мышц (диафрагмы, межрёберных мышц, плечевого пояса) происходит с помощью дыхательных гимнастик.", "image": "", "date_create": "2023-06-25T13:33:36.046Z", "is_public": true, "num_views": 1}}, {"model": "catalog.version", "pk": 1, "fields": {"product": 1, "version_number": 1.0, "version_name": "Карбон", "is_active": true}}, {"model": "catalog.version", "pk": 2, "fields": {"product": 3, "version_number": 1.0, "version_name": "Карбон", "is_active": false}}, {"model": "catalog.version", "pk": 3, "fields": {"product": 4, "version_number": 0.0, "version_name": "Силикон", "is_active": true}}, {"model": "catalog.version", "pk": 4, "fields": {"product": 2, "version_number": 2.0, "version_name": "Полный костюм", "is_active": true}}, {"model": "catalog.version", "pk": 5, "fields": {"product": 5, "version_number": 1.0, "version_name": "Маска для фридайвинга", "is_active": true}}, {"model": "catalog.version", "pk": 6, "fields": {"product": 6, "version_number": 0.0, "version_name": "Пластик", "is_active": true}}]
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-06-23T18:47:16.543Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Что такое фридайвинг и каким он бывает? - True",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-06-23T18:47:59.089Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Иногда фридайверы ныряют с тросом. Зачем он нужен? - True",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-06-23T18:48:47.720Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Фридайвинг появился тысячи лет назад - True",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2023-06-23T18:50:04.881Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Карбоновые ласты Hydra CarboTwill с калошами Leaderfins Forza: Великолепные карбоновые лопасти от компании Hydra. 100% карбон. Очень легкие и быстрые. Калоши Leaderfins Forza - новейшие качественные к",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2023-06-23T18:50:18.870Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Гидрокостюм женский Scorpena Apnea F2 - 7 мм: Это костюм раздельного типа, состоящий из куртки со встроенным шлемом и высоких штанов. Изготовлен из высококлассного неопрена с ультраэластичным внешним ",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2023-06-23T18:50:30.773Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Моноласта для фридайвинга Гипер Дайв Карбон: Моноласта с карбоновой лопастью, имеющей стеклотекстолитовое основание, для фридайвинга.Моноласт изготавливается с учетом Всех необходимых индивидуальных п",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2023-06-23T18:50:54.857Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "Силиконовая моноласта Molchanovs CORE, Black: Получайте удовольствие от тренировок и увлекательного фридайвинга с силиконовой моноластой CORE. Идеально подходит для фридайверов всех уровней, которые х",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2023-06-23T18:51:10.867Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "Маска Omer Zero 3: У маски Zero 3 объем подмасочного пространства настолько мал, что необходимость поддувать маску для компенсации обжима появляется только на глубине 18 м. (для Alien это 8-9 м.) Это ",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2023-06-23T18:51:28.136Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "Зажим для носа Mares Apnea: Удобный и компактный зажим для носа с анатомической поверхностью, прилегающей к крыльям носа. Не скользит и не царапает. Зажим регулируется в зависимости от формы носа. Отв",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2023-06-24T14:57:48.165Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Фридайвинг появился тысячи лет назад - False",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2023-06-24T16:29:51.167Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Что такое фридайвинг и каким он бывает? - True",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2023-06-24T16:31:06.876Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Иногда фридайверы ныряют с тросом. Зачем он нужен? - True",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2023-06-24T16:32:55.908Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Фридайвинг появился тысячи лет назад - False",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2023-06-24T16:33:27.795Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Иногда фридайверы ныряют с тросом. Зачем он нужен? - True",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0435\\u0432\\u044c\\u044e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2023-06-25T15:56:24.322Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Карбон",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2023-06-25T15:56:51.625Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Карбон",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2023-06-25T15:57:30.703Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "Силикон",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2023-06-25T15:58:33.407Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Полный костюм",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2023-06-25T15:59:11.024Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "Маска для фридайвинга",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2023-06-25T16:00:25.949Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "Пластик",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2023-06-25T16:01:16.999Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Карбон",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Is active\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Публикация",
+      "content_type": 7,
+      "codename": "add_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Публикация",
+      "content_type": 7,
+      "codename": "change_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Публикация",
+      "content_type": 7,
+      "codename": "delete_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Публикация",
+      "content_type": 7,
+      "codename": "view_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Категория",
+      "content_type": 8,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Категория",
+      "content_type": 8,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Категория",
+      "content_type": 8,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Категория",
+      "content_type": 8,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Продукция",
+      "content_type": 9,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Продукция",
+      "content_type": 9,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Продукция",
+      "content_type": 9,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Продукция",
+      "content_type": 9,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Версия",
+      "content_type": 10,
+      "codename": "add_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Версия",
+      "content_type": 10,
+      "codename": "change_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Версия",
+      "content_type": 10,
+      "codename": "delete_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view Версия",
+      "content_type": 10,
+      "codename": "view_version"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$xiBLUBkrVk6y3qRIFn0U2I$RTBvO3vgpfJ8azBTeIzeZhjMXhTJetcyQR/8HcbvqSQ=",
+      "last_login": "2023-06-23T18:44:46.983Z",
+      "is_superuser": true,
+      "username": "develop",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-06-23T18:44:21.458Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "catalog",
+      "model": "blog"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "catalog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "catalog",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "catalog",
+      "model": "version"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "e10cblgc5edkinm0c4nn7faxrn36eqis",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAUBf-FtSE8CoJL9_0Gch9UqgaS0q6M_65NutDtmZnzEgm2taSt5yXNLC5Ci9PvhkCPXHfAd6i3JqnVdZlR7oo8aJdj4_y8Hu7fQYFevnUAM5Bnj8yZ0KnAHlTQ2Ud7DuhQm0gwOWd8JG8HRDvYoHVUkCFOFMX7A_GzOAc:1qClm2:ssrz9fzGapXkcDcqiB_QwtCSreNbXzZyD7cqvt4VJGw",
+      "expire_date": "2023-07-07T18:44:46.989Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Карбоновые ласты Hydra CarboTwill с калошами Leaderfins Forza",
+      "about": "Великолепные карбоновые лопасти от компании Hydra. 100% карбон. Очень легкие и быстрые. Калоши Leaderfins Forza - новейшие качественные калоши для ласт от компании Лидерфинс. \r\nОсновые особенности калош для ласт Лидерфинс Форза.",
+      "image": "Product/FinsHydra.png",
+      "price_lot": 21481,
+      "date_create": "2023-06-23T18:39:38.771Z",
+      "date_last_change": "2023-07-02T15:52:03.535Z",
+      "cat": 2
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Гидрокостюм женский Scorpena Apnea F2 - 7 мм",
+      "about": "Это костюм раздельного типа, состоящий из куртки со встроенным шлемом и высоких штанов. Изготовлен из высококлассного неопрена с ультраэластичным внешним покрытием и открытой порой изнутри, что гарантирует высокую степень теплозащиты и отличное прилегание.",
+      "image": "Product/Wetsuit7.png",
+      "price_lot": 24800,
+      "date_create": "2023-06-23T18:39:38.771Z",
+      "date_last_change": "2023-06-23T18:50:18.867Z",
+      "cat": 4
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Моноласта для фридайвинга Гипер Дайв Карбон",
+      "about": "Моноласта с карбоновой лопастью, имеющей стеклотекстолитовое основание, для фридайвинга.Моноласт изготавливается с учетом Всех необходимых индивидуальных параметров.Имеет низкую положительную плавучесть.Галоши выполнены с учетом индивидуальных особенностей Ваших ног.",
+      "image": "Product/MonofinCarbon.png",
+      "price_lot": 37100,
+      "date_create": "2023-06-23T18:39:38.771Z",
+      "date_last_change": "2023-06-23T18:50:30.769Z",
+      "cat": 3
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Силиконовая моноласта Molchanovs CORE, Black",
+      "about": "Получайте удовольствие от тренировок и увлекательного фридайвинга с силиконовой моноластой CORE. Идеально подходит для фридайверов всех уровней, которые хотят тренировать свою технику, прежде чем приобретать снаряжение следующего уровня.",
+      "image": "Product/MonofinMolchanovs.png",
+      "price_lot": 14590,
+      "date_create": "2023-06-23T18:39:38.771Z",
+      "date_last_change": "2023-06-23T18:50:54.854Z",
+      "cat": 3
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "Маска Omer Zero 3",
+      "about": "У маски Zero 3 объем подмасочного пространства настолько мал, что необходимость поддувать маску для компенсации обжима появляется только на глубине 18 м. (для Alien это 8-9 м.) Это делает процесс погружения значительно более комфортным. Каждая деталь этой маски представляет собой идеальное сочетание дизайна и функциональности.",
+      "image": "Product/MaskZero.png",
+      "price_lot": 4790,
+      "date_create": "2023-06-23T18:39:38.771Z",
+      "date_last_change": "2023-06-23T18:51:10.865Z",
+      "cat": 1
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Зажим для носа Mares Apnea",
+      "about": "Удобный и компактный зажим для носа с анатомической поверхностью, прилегающей к крыльям носа. Не скользит и не царапает. Зажим регулируется в зависимости от формы носа. Отверстие для шнурка безопасности.",
+      "image": "Product/NoiseCleap.png",
+      "price_lot": 1990,
+      "date_create": "2023-06-23T18:39:38.771Z",
+      "date_last_change": "2023-06-23T18:51:28.133Z",
+      "cat": 1
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Аксессуары",
+      "about": ""
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Ласты",
+      "about": "Фридайвинг является экстремальным видом подводного спорта. Для достижения больших глубин на задержке дыхания ныряльщик должен развивать достаточно высокую скорость. Помогают ему в этом специальные ласты. Их особая конструкция позволяет значительно увеличить динамические показатели и снизить сопротивление воды. Благодаря такой экипировке можно достигать лучших результатов, затрачивая меньше усилий.Прежде чем купить ласты для фридайвинга, нужно изучить их основные характеристики:жесткость. Она должна быть довольно большой, чтобы выполнялся цепной ударный цикл. Это позволяет ныряльщику добиваться ускорения не только при прямом движении ног, но и во время отдачи. Жесткие модели подойдут опытным, хорошо тренированным спортсменам. Новичкам же лучше выбрать лопасти помягче;конструкция. Для свободного ныряния обычно используют модели с удлиненными лопастями и закрытой калошей. В некоторых случаях дайверы используют монолопасти, которые напоминают хвост русалки;материал. Обычно калоша изготавливается из жесткого силикона или резины, а лопасти – из стеклотекстолита, пластика или карбона."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Моноласты",
+      "about": "В конструкции моноласт есть некоторые особенности. Чем теснее галоши, тем более эффективны усилия пловца, обеспечивающие его движение вперед в воде. Однако от этого моноласта становится менее удобной. Эффективность – это соотношение усилия и результата. В некоторых галошах есть дополнительный резиновый слой для большего удобства стопы.Моноласты бывают разного размера и жесткости, с разной площадью лопасти, из разного материала и т.д. Все эти факторы могут так или иначе повлиять на эффективность плавания. Но, как и в любом виде спорта и с любым снаряжением, идеальную по всем параметрам модель еще не изобрели. И, разумеется, без хорошей техники плавания все эти особенности и характеристики не будут иметь значения."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Гидрокостюмы",
+      "about": "Есть несколько видов гидрокостюмов для фридайвинга, первый куртки с капюшоном и штанов с высокой талией, второй моно с молнией на спине. Конечно есть и другое многочисленное количество вариаций гидрокостюмов, но эти два основных. Материал, использующийся для таких гидрокостюмов, — неопрен, не имеющий текстильного покрытия . Он образует «вторую кожу», плотно прилипая к поверхности тела. Вода в нём практически не циркулирует, что благоприятно сказывается на теплоизоляции. Но из-за эффекта прилипания костюмы с «открытой порой» нужно одевать только в воде или при помощи мыльного раствора. Или с текстильным покрытием.Выбор гидрокостюма, который вам подходит, очень ответственный. Важно подобрать его чётко по своему размеру, так как если он не будет полностью облегать ваше тело, то останется пустое место, где циркулировала бы вода — а это недопустимо, так как повышает теплоотдачу. Костюм не должен провисать в промежности или подмышками, он обязан плотно прилегать на запястьях, шее и талии. Но новый гидрокостюм фридайвера не должен жать, ведь этим он будет причинять постоянный дискомфорт и превратит плавание из удовольствия в муку. И ещё — выбирайте максимально эластичный материал, от этого зависит эффективность костюма."
+    }
+  },
+  {
+    "model": "catalog.blog",
+    "pk": 1,
+    "fields": {
+      "title": "Что такое фридайвинг и каким он бывает?",
+      "slug": "chto-takoe-fridaiving-i-kakim-on-byvaet",
+      "content": "Фридайвинг — это различные виды погружений с задержкой дыхания. \r\nВ спортивном фридайвинге есть три дисциплины: задержка дыхания в бассейне на время, ныряние в длину на дистанцию и ныряние в глубину. Если брать фридайвинг в общем смысле слова, то можно и соревноваться, и заниматься фотографией или исследованием подводного ландшафта, и общаться с животными.\r\n\r\nОфициальных дисциплин во фридайвинге восемь. Из них четыре в бассейне:\r\n\r\n- задержка дыхания на время;\r\n- ныряние в длину без ласт брассом;\r\n- ныряние в длину в биластах (в двух ластах) ногами кролем;\r\n- ныряние в длину в моноласте (в одной большой ласте) — более сложный инструмент, который требует владения техникой плавания дельфином.\r\n\r\nГлубинных дисциплин тоже четыре:\r\n\r\n- ныряние в глубину без ласт брассом — физически сложный способ, потому что нужно погрузиться без вспомогательной верёвки и ласт;\r\n- ныряние в глубину в биластах;\r\n- ныряние в глубину в моноласте;\r\n- ныряние по тросу на руках — скорее дань традициям. Так, например, японские, полинезийские и греческие ныряльщики древних времён добывали ракушки и губки.\r\n\r\nВ дисциплине с моноластом результаты, как правило, больше. Например, в нырянии в длину в двух ластах абсолютный рекорд мира — 265 метров, а в моноласте — 318. В глубину же рекорд мира в биластах — 113 метров, в моноласте — 130. Разница есть!\r\n\r\nТакже один из прикладных видов фридайвинга — подводная охота. Это возможность охотиться без дыхания, зайти под воду с пневматическим ружьём или ружьём-арбалетом с резиновыми тягами. Такой вид охоты с точки зрения экологичности самый честный.",
+      "image": "Blog/C9647C9F-1147-4033-9348-5C507E6241E1.jpeg",
+      "date_create": "2023-06-23T18:47:16.533Z",
+      "is_public": true,
+      "num_views": 21
+    }
+  },
+  {
+    "model": "catalog.blog",
+    "pk": 2,
+    "fields": {
+      "title": "Иногда фридайверы ныряют с тросом. Зачем он нужен?",
+      "slug": "inogda-fridaivery-nyriaiut-s-trosom-zachem-on-nuzhen",
+      "content": "Трос — это инструмент, который помогает сделать первые шаги, ровно как и учебная дорожка в бассейне. Около него удобно ориентироваться, за него можно взяться, повисеть, научиться компенсировать давление и продувать уши. А потом уже можно нырять вдоль рифа, в открытом море без всяких канатов.\r\n\r\nНа соревнованиях по фридайвингу трос используют как направляющую, которая помогает плыть по одной прямой, и для обеспечения безопасности. К нему пристёгивают специальным лайнером, чтобы спортсмены не потерялись в тёмной воде. Ещё это помогает в случае подводных течений.\r\n\r\nКроме того, нырять нужно всегда с партнёром. Делать это одному небезопасно, так как может случиться потеря сознания. Если неправильно плыть с техникой, расходующей большое количество кислорода, то потеря сознания чревата утоплением. Поэтому нужен партнёр — квалифицированный инструктор.",
+      "image": "Blog/CC19DFAE-2CC7-44DE-94FE-5AB0378A774B.jpeg",
+      "date_create": "2023-06-23T18:47:59.080Z",
+      "is_public": true,
+      "num_views": 7
+    }
+  },
+  {
+    "model": "catalog.blog",
+    "pk": 3,
+    "fields": {
+      "title": "Фридайвинг появился тысячи лет назад",
+      "slug": "fridaiving-poiavilsia-tysiachi-let-nazad",
+      "content": "Само ныряние с задержкой дыхания появилось тысячи лет назад. Люди рыбачили, охотились, доставали жемчуг, ракушки и губки со дна. В России же всегда были реки и выходы к морям, фридайвинг существовал ещё в царское время и применялся как военный навык. Создавались подразделения подводных боевых пловцов, которые могли проводить спецоперации, запруды и диверсии с кораблями. К тому же у нас в стране всегда было много подводных охотников.\r\n\r\nСовременное развитие спортивного фридайвинга наступило в России чуть позже, чем в мире. В Европе такие состязания появились в 60-70-е годы XX века. А когда на экраны вышел фильм Люка Бессона «Голубая бездна» (1988 год) об истории Жака Майоля и Энцо Майорки, интерес к фридайвингу вырос и образовалась специальная федерация, которая начала развивать спорт в первую очередь во Франции.\r\n\r\nВ чистом виде фридайвинг как спорт появился в конце 90-х — начале 2000-х. Тогда начали образовываться клубы энтузиастов, которые выезжали на соревнования. Например, действующий врач нашей сборной Евгений Бутов уже тогда ездил в Европу на обучающие семинары к Умберто Пелиццари — итальянскому чемпиону тех времён. А в 2005 году была создана Федерация Фридайвинга — некоммерческое объединение, которое организовывает чемпионаты и в настоящее время.",
+      "image": "Blog/B0534EE3-77B0-4CF5-9222-DB891E7B2052.jpeg",
+      "date_create": "2023-06-23T18:48:47.707Z",
+      "is_public": false,
+      "num_views": 0
+    }
+  },
+  {
+    "model": "catalog.blog",
+    "pk": 4,
+    "fields": {
+      "title": "Навыки, которые необходимы для удачного погружения",
+      "slug": "navyki-kotorye-neobkhodimy-dlia-udachnogo-pogruzheniia",
+      "content": "Среди самых главных — расслабление, в том числе эмоциональное, и компенсация давления ушей. Также важны умение двигаться под водой брассом или в ластах, техника ныряния и координация.\r\n\r\nЕщё нельзя забывать о гибкости, подвижности грудной клетки. Развитие эластичности наших дыхательных мышц (диафрагмы, межрёберных мышц, плечевого пояса) происходит с помощью дыхательных гимнастик.",
+      "image": "",
+      "date_create": "2023-06-25T13:33:36.046Z",
+      "is_public": true,
+      "num_views": 1
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "version_number": 1.0,
+      "version_name": "Карбон",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 2,
+    "fields": {
+      "product": 3,
+      "version_number": 1.0,
+      "version_name": "Карбон",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 3,
+    "fields": {
+      "product": 4,
+      "version_number": 0.0,
+      "version_name": "Силикон",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 4,
+    "fields": {
+      "product": 2,
+      "version_number": 2.0,
+      "version_name": "Полный костюм",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 5,
+    "fields": {
+      "product": 5,
+      "version_number": 1.0,
+      "version_name": "Маска для фридайвинга",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 6,
+    "fields": {
+      "product": 6,
+      "version_number": 0.0,
+      "version_name": "Пластик",
+      "is_active": true
+    }
+  }
+]
