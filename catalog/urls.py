@@ -2,9 +2,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
 
+from catalog.apps import CatalogConfig
 from catalog.views import IndexView, contact, ProductDetailView, CategoryListView, \
     ProductListView, ProductCreateView, ProductUpdateView, ProductDeleteView, BlogListView, BlogDetailView,\
     BlogCreateView, BlogUpdateView, BlogDeleteView
+
+
+app_name = CatalogConfig.name
 
 urlpatterns = [
     path('', IndexView.as_view(), name='home'),
@@ -22,5 +26,7 @@ urlpatterns = [
     path('blog/<slug:slug>/', BlogDetailView.as_view(), name='blog_item'),
     path('blog/update/<slug:slug>/', BlogUpdateView.as_view(), name='blog_update'),
     path('blog/delete/<slug:slug>/', BlogDeleteView.as_view(), name='blog_delete'),
+
+    path('users/', BlogDeleteView.as_view(), name='blog_delete'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
