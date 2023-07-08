@@ -4,7 +4,7 @@
 {% block content %}
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
-      <a href="{% url 'product_create' %}" class="btn btn-sm btn-outline-secondary">Создать продукт</a>
+      <a href="{% url 'catalog:product_create' %}" class="btn btn-sm btn-outline-secondary">Создать продукт</a>
       {% for object in product_list %}
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col m-md-3">
@@ -21,9 +21,9 @@
               <p class="card-text">{{object.about|linebreaks|truncatewords:10}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="{% url 'product_item' object.pk %}" class="btn btn-sm btn-outline-secondary">Просмотр</a>
-                  <a href="{% url 'product_update' object.pk %}" class="btn btn-sm btn-outline-secondary">Изменить</a>
-                  <a href="{% url 'product_delete' object.pk %}" class="btn btn-sm btn-outline-secondary">Удалить</a>
+                  <a href="{% url 'catalog:product_item' object.pk %}" class="btn btn-sm btn-outline-secondary">Просмотр</a>
+                  <a href="{% url 'catalog:product_update' object.pk %}" class="btn btn-sm btn-outline-secondary">Изменить</a>
+                  <a href="{% url 'catalog:product_delete' object.pk %}" class="btn btn-sm btn-outline-secondary">Удалить</a>
                 </div>
               </div>
             </div>

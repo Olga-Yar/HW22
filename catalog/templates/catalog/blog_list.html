@@ -5,7 +5,7 @@
 
 <div class="row mb-2">
     <div class="col-md-11">
-      <a href="{% url 'blog_create' %}" class="btn btn-sm btn-outline-secondary">Создать статью</a>
+      <a href="{% url 'catalog:blog_create' %}" class="btn btn-sm btn-outline-secondary">Создать статью</a>
       {% for object in blog_list %}
         {% if object.is_public %}
         <div class="col p-4 d-flex flex-column position-static">
@@ -14,9 +14,9 @@
           <div class="mb-1 text-body-secondary">{{ object.date_create}}</div>
           <p class="card-text mb-4">{{object.content|linebreaks|truncatewords:20}}</p>
           <div class="btn-group">
-              <a href="{% url 'blog_item' object.slug %}" class="btn btn-sm btn-outline-secondary">Просмотр</a>
-              <a href="{% url 'blog_update' object.slug %}" class="btn btn-sm btn-outline-secondary">Изменить</a>
-              <a href="{% url 'blog_delete' object.slug %}" class="btn btn-sm btn-outline-secondary">Удалить</a>
+              <a href="{% url 'catalog:blog_item' object.slug %}" class="btn btn-sm btn-outline-secondary">Просмотр</a>
+              <a href="{% url 'catalog:blog_update' object.slug %}" class="btn btn-sm btn-outline-secondary">Изменить</a>
+              <a href="{% url 'catalog:blog_delete' object.slug %}" class="btn btn-sm btn-outline-secondary">Удалить</a>
           </div>
       </div>
       <hr>
