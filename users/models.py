@@ -10,6 +10,8 @@ class User(AbstractUser):
     avatar = models.ImageField(upload_to='users/', verbose_name='аватар', null=True)
     country = models.CharField(max_length=255, verbose_name='страна', null=True)
 
+    email_verify = models.BooleanField(default=False)
+
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
