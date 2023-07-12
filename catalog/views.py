@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.forms import inlineformset_factory
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy, reverse
@@ -42,10 +43,12 @@ class ProductDetailView(generic.DetailView):
     model = Product
 
 
-class ProductCreateView(generic.CreateView):
+class ProductCreateView(LoginRequiredMixin, generic.CreateView):
     model = Product
     form_class = ProductForm
-    success_url = reverse_lazy('product_list')
+    success_url = reverse_lazy('catalog:product_list')
+    login_url = 'users:login'
+    redirect_field_name = 'next'
 
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
@@ -57,28 +60,30 @@ class ProductCreateView(generic.CreateView):
 
         return context_data
 
-    # def form_valid(self, form):
-    #     self.object = form.save()
-    #     self.object.owner = self.request.user
-    #     self.object.save()
-    #
-    #     return super().form_valid(form)
-
     def form_valid(self, form):
-        formset = self.get_context_data()['formset']
         self.object = form.save()
-
-        if formset.is_valid():
-            formset.instance = self.object
-            formset.save()
+        self.object.owner = self.request.user
+        self.object.save()
 
         return super().form_valid(form)
 
+    # def form_valid(self, form):
+    #     formset = self.get_context_data()['formset']
+    #     self.object = form.save()
+    #
+    #     if formset.is_valid():
+    #         formset.instance = self.object
+    #         formset.save()
+    #
+    #     return super().form_valid(form)
 
-class ProductUpdateView(generic.UpdateView):
+
+class ProductUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Product
     form_class = ProductForm
-    success_url = reverse_lazy('product_list')
+    success_url = reverse_lazy('catalog:product_list')
+    login_url = 'users:login'
+    redirect_field_name = 'next'
 
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
@@ -101,9 +106,11 @@ class ProductUpdateView(generic.UpdateView):
         return super().form_valid(form)
 
 
-class ProductDeleteView(generic.DeleteView):
+class ProductDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Product
-    success_url = reverse_lazy('product_list')
+    success_url = reverse_lazy('catalog:product_list')
+    login_url = 'users:login'
+    redirect_field_name = 'next'
 
 
 class BlogListView(generic.ListView):
@@ -124,21 +131,21 @@ class BlogDetailView(generic.DetailView):
 class BlogCreateView(generic.CreateView):
     model = Blog
     form_class = BlogForm
-    success_url = reverse_lazy('blog_list')
+    success_url = reverse_lazy('catalog:blog_list')
     slug_url_kwarg = 'slug'
 
 
 class BlogUpdateView(generic.UpdateView):
     model = Blog
     form_class = BlogForm
-    success_url = reverse_lazy('blog_item')
+    success_url = reverse_lazy('catalog:blog_item')
     slug_url_kwarg = 'slug'
 
     def get_success_url(self):
-        return reverse('blog_item', kwargs={'slug': self.object.slug})
+        return reverse('catalog:blog_item', kwargs={'slug': self.object.slug})
 
 
 class BlogDeleteView(generic.DeleteView):
     model = Blog
-    success_url = reverse_lazy('blog_list')
+    success_url = reverse_lazy('catalog:blog_list')
     slug_url_kwarg = 'slug'
