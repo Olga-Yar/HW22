@@ -16,6 +16,9 @@
                   <span class="active">Активная версия</span>
               {% endif %}
               <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" fill="#eceeef" dy=".3em">{{object.name}}</text>
+              <div class="m-md-5">
+                  <span class="text-muted">{{object.owner|default:"Не указано"}}</span>
+              </div>
             </svg>
             <div class="card-body">
               <p class="card-text">{{object.about|linebreaks|truncatewords:10}}</p>
