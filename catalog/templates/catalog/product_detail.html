@@ -12,6 +12,9 @@
         <hr>
 
         <h2>{{ product.price_lot }} руб.</h2>
+        <div class="m-md-5">
+            <span class="text-muted">{{object.owner|default:"Не указано"}}</span>
+        </div>
         {% if product.image %}
         <img src= "{{ product.image.url }}">
         {% endif %}
