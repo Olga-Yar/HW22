@@ -54,6 +54,7 @@ class EmailVerify(View):
 
         if user is not None and token_generator.check_token(user, token):
             user.email_verify = True
+            user.save()
             login(request, user)
             return redirect('users:profile')
         return redirect('users:invalid_verify')
