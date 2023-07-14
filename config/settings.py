@@ -143,3 +143,11 @@ EMAIL_USE_SSL = True
 EMAIL_HOST_USER = 'yarosholha@yandex.ru'
 EMAIL_HOST_PASSWORD = 'hnepycddttefvljr'
 DEFAULT_FROM_EMAIL = 'yarosholha@yandex.ru'
+
+CACHES_ENABLE = False
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379",
+    }
+}
