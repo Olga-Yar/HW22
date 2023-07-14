@@ -15,6 +15,7 @@ class Product(models.Model):
     date_create = models.DateTimeField(auto_now_add=True, verbose_name='дата создания')
     date_last_change = models.DateTimeField(auto_now=True, verbose_name='дата последнего изменения')
     cat = models.ForeignKey('Category', on_delete=models.PROTECT, **NULLABLE)
+    is_published = models.BooleanField(default=False, verbose_name='публикация')
 
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, **NULLABLE, verbose_name='владелец')
 
