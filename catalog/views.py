@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.forms import inlineformset_factory
+from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.views import generic
@@ -27,6 +28,16 @@ class CategoryListView(generic.ListView):
 class ProductListView(generic.ListView):
     model = Product
     version = Version
+
+    # def get_queryset(self):
+    #     queryset = super().get_queryset().filter(
+    #         cat_id=self.kwargs.get('pk'),
+    #     )
+    #
+    #     if not self.request.user.is_staff:
+    #         queryset = queryset.filter(owner=self.request.user)
+    #
+    #     return queryset
 
 
 def contact(request):
@@ -84,6 +95,18 @@ class ProductUpdateView(LoginRequiredMixin, generic.UpdateView):
     success_url = reverse_lazy('catalog:product_list')
     login_url = 'users:login'
     redirect_field_name = 'next'
+
+    def get_object(self, queryset=None):
+        self.object = super().get_object(queryset)
+        if self.object.owner != self.request.user:
+            raise Http404
+        return self.object
+
+    # def get_object(self, queryset=None):
+    #     self.object = super().get_object(queryset)
+    #     if self.object.owner != self.request.user and not self.request.user.is_staff:
+    #         raise Http404
+    #     return self.object
 
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
