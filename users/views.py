@@ -3,13 +3,14 @@ import random
 from django.conf import settings
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.views import LoginView
 from django.core.exceptions import ValidationError
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
-from django.views import View
+from django.views import View, generic
 from django.views.generic import CreateView, UpdateView
 
 from users.forms import UserRegisterForm, UserProfileForm
@@ -25,48 +26,76 @@ class RegisterView(CreateView):
     template_name = 'users/register.html'
     success_url = reverse_lazy('users:login')
 
+    # def form_valid(self, form):
+    #     new_user = form.save(commit=False)
+    #     new_user.is_active = False
+    #     new_user.save()
+    #
+    #     # создание токена подтверждения
+    #     token = default_token_generator.make_token(new_user)
+    #     uid = urlsafe_base64_encode(force_bytes(new_user.pk))
+    #
+    #     # формирование ссылки для подтверждения
+    #     confirm_url = reverse('users:verify_email', kwargs={'uidb64': uid, 'token': token})
+    #     confirm_url = self.request.build_absolute_uri(confirm_url)
+    #
+    #     send_mail(
+    #         subject='Подтвердите вашу почту',
+    #         message=f'Для завершении регистрации подтвердите вашу почту, перейдя по ссылке: {confirm_url}.',
+    #         from_email=settings.EMAIL_HOST_USER,
+    #         recipient_list=[new_user.email]
+    #     )
+    #     return super().form_valid(form)
     def form_valid(self, form):
-        new_user = form.save(commit=False)
-        new_user.is_active = False
-        new_user.save()
-
-        # создание токена подтверждения
-        token = default_token_generator.make_token(new_user)
-        uid = urlsafe_base64_encode(force_bytes(new_user.pk))
-
-        # формирование ссылки для подтверждения
-        confirm_url = reverse('users:verify_email', kwargs={'uidb64': uid, 'token': token})
-        confirm_url = self.request.build_absolute_uri(confirm_url)
-
+        self.object = form.save()
+        self.object.verification_key = ''.join([str(random.randint(0, 9)) for _ in range(21)])
         send_mail(
-            subject='Подтвердите вашу почту',
-            message=f'Для завершении регистрации подтвердите вашу почту, перейдя по ссылке: {confirm_url}.',
+            'Верификация',
+            f'Для регистрации перейдите по ссылке http://localhost:8000/users/confirm_email/{self.object.verification_key}',
             from_email=settings.EMAIL_HOST_USER,
-            recipient_list=[new_user.email]
+            recipient_list=[self.object.email]
+
         )
+        redirect('users:profile')
         return super().form_valid(form)
 
 
-class EmailVerify(View):
 
-    def get(self, request, uidb64, token):
-        user = self.get_user(uidb64)
+# class EmailVerify(View):
+#
+#     def get(self, request, uidb64, token):
+#         user = self.get_user(uidb64)
+#
+#         if user is not None and token_generator.check_token(user, token):
+#             user.email_verify = True
+#             user.save()
+#             login(request, user)
+#             return redirect('users:profile')
+#         return redirect('users:invalid_verify')
+#
+#     @staticmethod
+#     def get_user(uidb64):
+#         try:
+#             uid = urlsafe_base64_decode(uidb64).decode()
+#             user = User.objects.get(pk=uid)
+#         except (TypeError, ValueError, OverflowError, User.DoesNotExist, ValidationError):
+#             user = None
+#         return user
 
-        if user is not None and token_generator.check_token(user, token):
-            user.email_verify = True
+
+class ConfirmView(generic.TemplateView):
+    model = User
+
+    def get(self, *args, **kwargs):
+        key = self.kwargs.get('key')
+        user = User.objects.filter(verification_key=key).first()
+        if user:
+            user.is_verified = True
+            user.verification_key = None
             user.save()
-            login(request, user)
-            return redirect('users:profile')
-        return redirect('users:invalid_verify')
+            login(self.request, user)
 
-    @staticmethod
-    def get_user(uidb64):
-        try:
-            uid = urlsafe_base64_decode(uidb64).decode()
-            user = User.objects.get(pk=uid)
-        except (TypeError, ValueError, OverflowError, User.DoesNotExist, ValidationError):
-            user = None
-        return user
+        return redirect('/')
 
 
 class ProfileView(UpdateView):
