@@ -41,14 +41,7 @@ class ProductListView(generic.ListView):
     version = Version
 
     def get_queryset(self):
-        queryset = super().get_queryset().filter(
-            cat_id=self.kwargs.get('pk'),
-        )
-
-        if not self.request.user.is_staff:
-            queryset = queryset.filter(owner=self.request.user)
-
-        return queryset
+        return super().get_queryset()
 
 
 def contact(request):
