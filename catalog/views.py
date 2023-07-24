@@ -9,6 +9,7 @@ from django.views import generic
 from catalog.forms import ProductForm, BlogForm, VersionForm
 from catalog.models import Category, Product, Blog, Version
 from config import settings
+from catalog.services import get_category
 
 
 # Create your views here.
@@ -20,10 +21,10 @@ class IndexView(generic.View):
             key = 'category_list'
             category_list = cache.get(key)
             if category_list is None:
-                category_list = Category.objects.all()
+                category_list = get_category()
                 cache.set(key, category_list)
         else:
-            category_list = Category.objects.all()
+            category_list = get_category()
 
         context = {
             'category_list': category_list,
